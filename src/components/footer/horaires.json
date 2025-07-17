@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_footer_horaires",
+  "info": {
+    "displayName": "Horaires"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "Heure": {
+      "type": "component",
+      "component": "component.heure",
+      "repeatable": true
+    }
+  },
+  "config": {}
+}

@@ -1,0 +1,20 @@
+{
+  "collectionName": "components_component_services",
+  "info": {
+    "displayName": "Services"
+  },
+  "options": {},
+  "attributes": {
+    "images": {
+      "type": "component",
+      "component": "image-component.image",
+      "repeatable": true
+    },
+    "button": {
+      "type": "component",
+      "component": "component.button",
+      "repeatable": false
+    }
+  },
+  "config": {}
+}

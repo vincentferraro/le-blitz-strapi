@@ -1,0 +1,30 @@
+{
+  "collectionName": "components_component_rooms",
+  "info": {
+    "displayName": "Rooms"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "images": {
+      "type": "component",
+      "component": "image-component.image",
+      "repeatable": true
+    },
+    "text_1": {
+      "type": "text"
+    },
+    "text_2": {
+      "type": "text"
+    },
+    "text_3": {
+      "type": "text"
+    },
+    "text_4": {
+      "type": "string"
+    }
+  },
+  "config": {}
+}

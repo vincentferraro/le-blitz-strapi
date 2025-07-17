@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_footer_locations",
+  "info": {
+    "displayName": "Location"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    }
+  },
+  "config": {}
+}

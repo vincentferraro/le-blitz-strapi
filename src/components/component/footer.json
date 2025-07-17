@@ -1,0 +1,25 @@
+{
+  "collectionName": "components_component_footers",
+  "info": {
+    "displayName": "Footer"
+  },
+  "options": {},
+  "attributes": {
+    "Horaire": {
+      "type": "component",
+      "component": "footer.horaires",
+      "repeatable": false
+    },
+    "Location": {
+      "type": "component",
+      "component": "footer.location",
+      "repeatable": false
+    },
+    "informations": {
+      "type": "component",
+      "component": "footer.informations",
+      "repeatable": false
+    }
+  },
+  "config": {}
+}

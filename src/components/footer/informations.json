@@ -1,0 +1,22 @@
+{
+  "collectionName": "components_footer_informations",
+  "info": {
+    "displayName": "Informations"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "address": {
+      "type": "string"
+    },
+    "mail": {
+      "type": "string"
+    },
+    "phone": {
+      "type": "string"
+    }
+  },
+  "config": {}
+}

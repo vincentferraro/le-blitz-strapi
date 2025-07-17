@@ -1,0 +1,33 @@
+{
+  "collectionName": "components_component_headers",
+  "info": {
+    "displayName": "Header"
+  },
+  "options": {},
+  "attributes": {
+    "NavItem": {
+      "type": "component",
+      "component": "component.navbar",
+      "repeatable": true
+    },
+    "button": {
+      "type": "component",
+      "component": "component.button",
+      "repeatable": false
+    },
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "image_alt": {
+      "type": "string"
+    }
+  },
+  "config": {}
+}
