@@ -40,6 +40,11 @@
       "type": "component",
       "component": "component.footer",
       "repeatable": true
+    },
+    "about_salles": {
+      "type": "component",
+      "component": "section.about",
+      "repeatable": false
     }
   }
 }

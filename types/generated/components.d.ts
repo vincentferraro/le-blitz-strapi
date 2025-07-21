@@ -44,7 +44,6 @@ export interface ComponentHero extends Struct.ComponentSchema {
   attributes: {
     central_text: Schema.Attribute.String;
     image: Schema.Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
-    image_alt: Schema.Attribute.String;
     left_text: Schema.Attribute.String;
     right_text: Schema.Attribute.String;
   };

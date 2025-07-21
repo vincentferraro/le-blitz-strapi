@@ -1,10 +1,10 @@
 {
   "kind": "singleType",
-  "collectionName": "cartes",
+  "collectionName": "plats",
   "info": {
-    "singularName": "carte",
-    "pluralName": "cartes",
-    "displayName": "Carte"
+    "singularName": "plat",
+    "pluralName": "plats",
+    "displayName": "Plat"
   },
   "options": {
     "draftAndPublish": true

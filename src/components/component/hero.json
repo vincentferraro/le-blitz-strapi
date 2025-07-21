@@ -23,9 +23,6 @@
         "videos",
         "audios"
       ]
-    },
-    "image_alt": {
-      "type": "string"
     }
   },
   "config": {}
