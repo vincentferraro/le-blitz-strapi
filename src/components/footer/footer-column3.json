@@ -1,0 +1,23 @@
+{
+  "collectionName": "components_footer_footer_column3s",
+  "info": {
+    "displayName": "footer_column3"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "images": {
+      "type": "media",
+      "multiple": true,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    }
+  },
+  "config": {}
+}

@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_component_horaires",
+  "info": {
+    "displayName": "horaire"
+  },
+  "options": {},
+  "attributes": {
+    "day": {
+      "type": "string"
+    },
+    "hour": {
+      "type": "string"
+    }
+  },
+  "config": {}
+}

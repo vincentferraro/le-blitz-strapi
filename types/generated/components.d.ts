@@ -17,9 +17,24 @@ export interface ComponentFooter extends Struct.ComponentSchema {
     displayName: 'Footer';
   };
   attributes: {
-    Horaire: Schema.Attribute.Component<'footer.horaires', false>;
-    informations: Schema.Attribute.Component<'footer.informations', false>;
-    Location: Schema.Attribute.Component<'footer.location', false>;
+    footer_column_2: Schema.Attribute.Component<
+      'component.footer-column2',
+      false
+    >;
+    footer_column3: Schema.Attribute.Component<'footer.footer-column3', false>;
+    footer_column4: Schema.Attribute.Component<'footer.footer-column4', false>;
+    logo: Schema.Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
+  };
+}
+
+export interface ComponentFooterColumn2 extends Struct.ComponentSchema {
+  collectionName: 'components_component_footer_column2s';
+  info: {
+    displayName: 'footer_column2';
+  };
+  attributes: {
+    navItem: Schema.Attribute.Component<'component.navbar', true>;
+    title: Schema.Attribute.String;
   };
 }
 
@@ -31,7 +46,6 @@ export interface ComponentHeader extends Struct.ComponentSchema {
   attributes: {
     button: Schema.Attribute.Component<'component.button', false>;
     image: Schema.Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
-    image_alt: Schema.Attribute.String;
     NavItem: Schema.Attribute.Component<'component.navbar', true>;
   };
 }
@@ -53,6 +67,17 @@ export interface ComponentHeure extends Struct.ComponentSchema {
   collectionName: 'components_component_heures';
   info: {
     displayName: 'Heure';
+  };
+  attributes: {
+    day: Schema.Attribute.String;
+    hour: Schema.Attribute.String;
+  };
+}
+
+export interface ComponentHoraire extends Struct.ComponentSchema {
+  collectionName: 'components_component_horaires';
+  info: {
+    displayName: 'horaire';
   };
   attributes: {
     day: Schema.Attribute.String;
@@ -102,7 +127,6 @@ export interface ComponentServices extends Struct.ComponentSchema {
     displayName: 'Services';
   };
   attributes: {
-    button: Schema.Attribute.Component<'component.button', false>;
     images: Schema.Attribute.Component<'image-component.image', true>;
   };
 }
@@ -114,6 +138,31 @@ export interface ComponentTextBlock extends Struct.ComponentSchema {
   };
   attributes: {
     text: Schema.Attribute.Text;
+  };
+}
+
+export interface FooterFooterColumn3 extends Struct.ComponentSchema {
+  collectionName: 'components_footer_footer_column3s';
+  info: {
+    displayName: 'footer_column3';
+  };
+  attributes: {
+    images: Schema.Attribute.Media<
+      'images' | 'files' | 'videos' | 'audios',
+      true
+    >;
+    title: Schema.Attribute.String;
+  };
+}
+
+export interface FooterFooterColumn4 extends Struct.ComponentSchema {
+  collectionName: 'components_footer_footer_column4s';
+  info: {
+    displayName: 'footer_column4';
+  };
+  attributes: {
+    navItem: Schema.Attribute.Component<'component.navbar', false>;
+    title: Schema.Attribute.String;
   };
 }
 
@@ -177,24 +226,41 @@ export interface SectionAbout extends Struct.ComponentSchema {
   };
 }
 
+export interface SectionHoraires extends Struct.ComponentSchema {
+  collectionName: 'components_section_horaires';
+  info: {
+    displayName: 'horaires';
+  };
+  attributes: {
+    horaire: Schema.Attribute.Component<'component.horaire', true>;
+    special: Schema.Attribute.String;
+    title: Schema.Attribute.String;
+  };
+}
+
 declare module '@strapi/strapi' {
   export module Public {
     export interface ComponentSchemas {
       'component.button': ComponentButton;
       'component.footer': ComponentFooter;
+      'component.footer-column2': ComponentFooterColumn2;
       'component.header': ComponentHeader;
       'component.hero': ComponentHero;
       'component.heure': ComponentHeure;
+      'component.horaire': ComponentHoraire;
       'component.image-gallerie': ComponentImageGallerie;
       'component.navbar': ComponentNavbar;
       'component.rooms': ComponentRooms;
       'component.services': ComponentServices;
       'component.text-block': ComponentTextBlock;
+      'footer.footer-column3': FooterFooterColumn3;
+      'footer.footer-column4': FooterFooterColumn4;
       'footer.horaires': FooterHoraires;
       'footer.informations': FooterInformations;
       'footer.location': FooterLocation;
       'image-component.image': ImageComponentImage;
       'section.about': SectionAbout;
+      'section.horaires': SectionHoraires;
     }
   }
 }

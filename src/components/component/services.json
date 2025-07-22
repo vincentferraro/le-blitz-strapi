@@ -9,11 +9,6 @@
       "type": "component",
       "component": "image-component.image",
       "repeatable": true
-    },
-    "button": {
-      "type": "component",
-      "component": "component.button",
-      "repeatable": false
     }
   },
   "config": {}

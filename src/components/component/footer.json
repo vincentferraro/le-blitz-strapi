@@ -5,19 +5,29 @@
   },
   "options": {},
   "attributes": {
-    "Horaire": {
+    "logo": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "footer_column_2": {
       "type": "component",
-      "component": "footer.horaires",
+      "component": "component.footer-column2",
       "repeatable": false
     },
-    "Location": {
+    "footer_column3": {
       "type": "component",
-      "component": "footer.location",
+      "component": "footer.footer-column3",
       "repeatable": false
     },
-    "informations": {
+    "footer_column4": {
       "type": "component",
-      "component": "footer.informations",
+      "component": "footer.footer-column4",
       "repeatable": false
     }
   },

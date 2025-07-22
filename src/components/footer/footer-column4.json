@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_footer_footer_column4s",
+  "info": {
+    "displayName": "footer_column4"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "navItem": {
+      "type": "component",
+      "component": "component.navbar",
+      "repeatable": false
+    }
+  },
+  "config": {}
+}

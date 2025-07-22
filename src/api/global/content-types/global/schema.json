@@ -26,9 +26,9 @@
       "component": "section.about",
       "repeatable": false
     },
-    "room_section": {
+    "about_salles": {
       "type": "component",
-      "component": "component.rooms",
+      "component": "section.about",
       "repeatable": false
     },
     "services": {
@@ -36,14 +36,14 @@
       "component": "component.services",
       "repeatable": false
     },
+    "horaires": {
+      "type": "component",
+      "component": "section.horaires",
+      "repeatable": false
+    },
     "footer": {
       "type": "component",
       "component": "component.footer",
-      "repeatable": true
-    },
-    "about_salles": {
-      "type": "component",
-      "component": "section.about",
       "repeatable": false
     }
   }
