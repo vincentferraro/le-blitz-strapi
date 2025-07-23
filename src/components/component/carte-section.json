@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_component_carte_sections",
+  "info": {
+    "displayName": "Carte_section"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "button": {
+      "type": "component",
+      "component": "component.button",
+      "repeatable": false
+    }
+  },
+  "config": {}
+}

@@ -15,7 +15,7 @@
         "audios"
       ]
     },
-    "footer_column_2": {
+    "footer_column2": {
       "type": "component",
       "component": "component.footer-column2",
       "repeatable": false

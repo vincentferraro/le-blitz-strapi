@@ -14,7 +14,7 @@
     "header": {
       "type": "component",
       "component": "component.header",
-      "repeatable": true
+      "repeatable": false
     },
     "hero": {
       "type": "component",
@@ -24,6 +24,11 @@
     "about": {
       "type": "component",
       "component": "section.about",
+      "repeatable": false
+    },
+    "carte_section": {
+      "type": "component",
+      "component": "component.carte-section",
       "repeatable": false
     },
     "about_salles": {

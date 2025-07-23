@@ -5,10 +5,18 @@
   },
   "options": {},
   "attributes": {
+    "title": {
+      "type": "string"
+    },
     "images": {
-      "type": "component",
-      "component": "image-component.image",
-      "repeatable": true
+      "type": "media",
+      "multiple": true,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
     }
   },
   "config": {}

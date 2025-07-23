@@ -453,6 +453,7 @@ export interface ApiEnCeMomentEnCeMoment extends Struct.SingleTypeSchema {
     > &
       Schema.Attribute.Private;
     publishedAt: Schema.Attribute.DateTime;
+    title: Schema.Attribute.String;
     updatedAt: Schema.Attribute.DateTime;
     updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
@@ -472,11 +473,12 @@ export interface ApiGlobalGlobal extends Struct.SingleTypeSchema {
   attributes: {
     about: Schema.Attribute.Component<'section.about', false>;
     about_salles: Schema.Attribute.Component<'section.about', false>;
+    carte_section: Schema.Attribute.Component<'component.carte-section', false>;
     createdAt: Schema.Attribute.DateTime;
     createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
     footer: Schema.Attribute.Component<'component.footer', false>;
-    header: Schema.Attribute.Component<'component.header', true>;
+    header: Schema.Attribute.Component<'component.header', false>;
     hero: Schema.Attribute.Component<'component.hero', false>;
     horaires: Schema.Attribute.Component<'section.horaires', false>;
     locale: Schema.Attribute.String & Schema.Attribute.Private;

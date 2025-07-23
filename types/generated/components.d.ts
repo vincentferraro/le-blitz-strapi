@@ -11,13 +11,24 @@ export interface ComponentButton extends Struct.ComponentSchema {
   };
 }
 
+export interface ComponentCarteSection extends Struct.ComponentSchema {
+  collectionName: 'components_component_carte_sections';
+  info: {
+    displayName: 'Carte_section';
+  };
+  attributes: {
+    button: Schema.Attribute.Component<'component.button', false>;
+    title: Schema.Attribute.String;
+  };
+}
+
 export interface ComponentFooter extends Struct.ComponentSchema {
   collectionName: 'components_component_footers';
   info: {
     displayName: 'Footer';
   };
   attributes: {
-    footer_column_2: Schema.Attribute.Component<
+    footer_column2: Schema.Attribute.Component<
       'component.footer-column2',
       false
     >;
@@ -127,7 +138,11 @@ export interface ComponentServices extends Struct.ComponentSchema {
     displayName: 'Services';
   };
   attributes: {
-    images: Schema.Attribute.Component<'image-component.image', true>;
+    images: Schema.Attribute.Media<
+      'images' | 'files' | 'videos' | 'audios',
+      true
+    >;
+    title: Schema.Attribute.String;
   };
 }
 
@@ -242,6 +257,7 @@ declare module '@strapi/strapi' {
   export module Public {
     export interface ComponentSchemas {
       'component.button': ComponentButton;
+      'component.carte-section': ComponentCarteSection;
       'component.footer': ComponentFooter;
       'component.footer-column2': ComponentFooterColumn2;
       'component.header': ComponentHeader;
